@@ -23,7 +23,7 @@ void AudioCallback(float**  in, float** out, size_t size)
     
     // Handle Triggering the Plucks
     trig = 0.0f;
-    if (patch.encoder.RisingEdge() or patch.gateIns[0].Trig())
+    if (patch.gateIns[0].Trig())
       trig = 1.0f;
 
     /** This loop will allow us to process the individual samples of audio */
@@ -47,8 +47,6 @@ void setup()
     patch = DAISY.init(DAISY_PATCH_SM);
     plk.Init(DAISY.AudioSampleRate(), init_buff, 256, PLUCK_MODE_RECURSIVE);
 
-    button.Init(1000, true, PIN_PATCH_SM_B7, INPUT_PULLUP);
-    toggle.Init(1000, true, PIN_PATCH_SM_B8, INPUT_PULLUP);
     DAISY.begin(AudioCallback);
 }
 
