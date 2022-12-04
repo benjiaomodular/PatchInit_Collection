@@ -1,19 +1,15 @@
-# BasicOscillator
-
-A basic DaisyDuino oscillator for the Patch.init() with 6 selectable voices and a built in envelope and vca.
+#
 
 ## Knobs
 - CV_1 - tune
-- CV_2 - oscillator selector
-- CV_3 - attack
+- CV_2 - amplitude
+- CV_3 - damp
 - CV_4 - decay
 
 ## Inputs
-- B7 - manual gate button
-- B8 - flip up to use internal vca
 - B10 - gate in
 - CV_5 - volt/oct
-- CV_6 - attack
+- CV_6 - damp
 - CV_7 - decay
 
 ## Outputs
