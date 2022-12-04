@@ -2,9 +2,6 @@
 
 DaisyHardware patch;
 static Pluck plk;
-
-Switch button;
-Switch toggle;
 float init_buff[256];
 
 float voltsPerNote = 0.0833;
