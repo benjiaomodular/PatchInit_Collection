@@ -1,21 +1,22 @@
-# BasicOscillator
+# Strings
 
-A basic DaisyDuino oscillator for the Patch.init() with 6 selectable voices and a built in envelope and vca.
+DaisyDuino patch based on the Karplus-Strong plucked string model.
+
+https://electro-smith.github.io/DaisySP/classdaisysp_1_1_string_voice.html
 
 ## Knobs
 - CV_1 - tune
-- CV_2 - oscillator selector
-- CV_3 - attack
-- CV_4 - decay
+- CV_2 - brightness
+- CV_3 - damp
+- CV_4 - non-linearity
 
 ## Inputs
-- B7 - manual gate button
-- B8 - flip up to use internal vca
 - B10 - gate in
 - CV_5 - volt/oct
-- CV_6 - attack
-- CV_7 - decay
+- CV_6 - brightness
+- CV_7 - damp
+- CV_8 - non-linearity
 
 ## Outputs
 - OUT_L and OUT_R - stereo output
-- CV_OUT_1 - envelope out
+- CV_OUT_1 - lfo out
