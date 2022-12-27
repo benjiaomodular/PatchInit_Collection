@@ -34,9 +34,7 @@ void AudioCallback(float**  in, float** out, size_t size)
     for(size_t i = 0; i < size; i++)
     {
         float lfo_sig = lfo.Process();
-
-        /** In this example both outputs will be the same */
-        out[0][i] = out[1][i] = str.Process(trig);
+        out[0][i] = out[1][i] = str.Process(trig) * 0.2f; // Adjust multiplier to increase/decrease output level
 
         // Light up LED based on envelope output
         patch.WriteCvOut(PIN_PATCH_SM_CV_OUT_1, 5 * lfo_sig);
